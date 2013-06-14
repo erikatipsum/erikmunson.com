@@ -61,14 +61,15 @@ h2 {
 
 h3 {
 	/* 36px / 24px */
-	color: @title_color;
+	color: @tertiary_text;
 	font-size: 42 / @em;
-	font-family: "OstrichSansCondensedLight", "Helvetica Neue", Helvetica, sans-serif;
+	font-family: "OstrichSansMedium", "Helvetica Neue", Helvetica, sans-serif;
 	font-weight: 100;
 	line-height: (@line*2) / 42 * 1em;
 	margin: (2.618/@em) 0  (@line) / 36 * 1em;
 	text-shadow: 0px .1em .2em rgba(0,0,0,.7);
 	letter-spacing: .03em;
+	-webkit-font-smoothing: antialiased;
 }
 
 
@@ -80,9 +81,9 @@ h4 {
 
 
 h5 {
-	font-family: "OstrichSansCondensedLight", "Helvetica Neue", Helvetica, sans-serif;
+	font-family: "OstrichSansMedium", "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 1.18em;
-	color: @primary_text;
+	color: @tertiary_text;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	line-height: (@line*2) / 32 * 1em;
@@ -179,6 +180,8 @@ SKILLS
 
 .skills>figure>img {
 	padding: 2em 0;
+	max-height: 100%;
+	margin: 0 auto;
 }
 
 /***************************
@@ -209,6 +212,8 @@ ABOUT ME
 	box-shadow: none;
 	width: 20em;
 	margin: 6em auto;
+	font-size: 0.86em; // These two lines
+	line-height: 1.55em; // Zoom out the timeline to fit on a 320px viewport
 }
 
 .timeline>ul>li {
@@ -241,7 +246,7 @@ ABOUT ME
 }
 
 .timeline>ul>li:nth-child(2) {// Discovered Computer
-	margin-left: .8em;
+	margin-left: .6em;
 	margin-top: 0;
 }
 
@@ -250,7 +255,7 @@ ABOUT ME
 }
 
 .timeline>ul>li:nth-child(3) {// Discovered Caffeine
-	margin-right: 1.4em;
+	margin-right: 1.36em;
 	margin-top: 0;
 	margin-bottom: 0;
 	text-align: right;
@@ -262,7 +267,7 @@ ABOUT ME
 }
 
 .timeline>ul>li:nth-child(4) {// Co-Hosted A Tech News Podcast
-	width: 9em;
+	width: 8em;
 	margin-left: 2.5em;
 	margin-top: 0em;
 	margin-bottom: 0;
@@ -276,7 +281,7 @@ ABOUT ME
 
 .timeline>ul>li:nth-child(4)>figcaption:after {// Co-Hosted A Tech News Podcast YEAR
 	position:absolute;
-	left: 7em;
+	left: 7.07em;
 	top: 2.45em;
 }
 
@@ -314,14 +319,14 @@ ABOUT ME
 
 .timeline>ul>li:nth-child(6)>figcaption:after {// Rebranded As Ipsum Creative YEAR
 	position:absolute;
-	left: 6.2em;
+	left: 6.249em;
 	top: 2.4em;
 }
 
 .timeline>ul>li:nth-child(7) {// Moved to Albuquerque, NM
-	width: 9em;
+	width: 8em;
 	margin-bottom: 0;
-	margin-right: 2.4em;
+	margin-right: 2.38em;
 	margin-top: 0em;
 }
 
@@ -333,7 +338,7 @@ ABOUT ME
 
 .timeline>ul>li:nth-child(7)>figcaption:before {// Moved to Albuquerque, NM YEAR
 	position:absolute;
-	right: 7.1em;
+	right: 7.23em;
 	top: 1.5em;
 }
 
@@ -360,7 +365,7 @@ ABOUT ME
 .timeline>ul>li:nth-child(9) {// Front-End Developer at SantaFe.com
 	width: 8em;
 	margin-bottom: 0;
-	margin-right: 2.3em;
+	margin-right: 2.33em;
 	margin-top: 1.3em;
 }
 
@@ -380,7 +385,7 @@ ABOUT ME
 .timeline>ul>li:nth-child(10) {// Web Designer/Developer at Grace Communications
 	width: 8em;
 	margin-bottom: 0;
-	margin-left: 1.3em;
+	margin-left: 1.3799em;
 	margin-top: -1em;
 }
 
@@ -399,7 +404,7 @@ ABOUT ME
 
 .timeline>ul>li:nth-child(11) {// I Want to Join your Team!
 	width: 10em;
-	margin-left: 5.4em;
+	margin-left: 5.48em;
 	margin-top: 0.5em;
 }
 
@@ -427,7 +432,7 @@ ABOUT ME
 	content: attr(data-year);
 	display:block;
 	position: absolute;
-	left: .25em;
+	left: 0.1446em;
 }
 
 /***************************
@@ -472,6 +477,7 @@ footer a:hover {
 
 footer h5 {
 	display: inline;
+	padding-right: .618em;
 }
 
 
