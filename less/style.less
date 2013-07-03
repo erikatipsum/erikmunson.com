@@ -4,7 +4,7 @@ STYLE
 
 @import "variables"; // LESS Variables
 @import "boilerplate"; // Consistency Fixes, etc.
-@import "baseline"; // Baseline Type Settings
+@import "baseline"; // Baseline Type & Layout Settings
 @import "fonts"; // Fonts
 
 
@@ -20,57 +20,235 @@ STYLE
 *
 */
 
-/* @media screen and (min-width: 720px) */
-@media screen and (min-width: 45em) {
+/* @media screen and (min-width: 755px) */
+@media screen and (min-width: 47.187em) {
 
 	body {
 		/* Reset baseline grid to 16/16 = 1 */
 		font-size: (@font-size) / @em;
 	}
 
-	#twoway .wrapper {
+	article, footer {
+		margin: 0 3%;
+	}
+
+	footer {
+		width: 94%;
 		float: left;
+		clear: both;
+	}
+
+	article > section {
+		position: relative;
+		margin-bottom: 2.263158em;
+		float: left;
+		clear: none;
+	}
+
+	.experience, .skills, .about-me>h3, .about-me>p, .about-me>figure, .educational-background {
+		width: 48%;
+		clear: none;
+		float: left;
+	}
+
+	.educational-background {
+		width: 100%;
+	}
+
+	.about-me>h3, .about-me>p, .about-me>figure {
+		clear: left;
+	}
+
+	.skills  {
+		float: right;
+	}
+
+	.skills>h3, .educational-background>h3 {
+		text-align: right;
+	}
+
+	.skills>figure {
+		float: right;
+	}
+
+	.skills>figure>img {
+		padding: 3em 0;
+	}
+
+	.skills>ul>li {
+		text-align: right;
+		padding-right: 1.3rem;
+	}
+
+	.skills>ul>li:nth-child(even) {
+		float: right;
+		padding-right: 0rem;
+	}
+
+	.about-me>figure:first-of-type {
+		width: 40%;
+		margin: 0 0 2em 3%;
+	}
+
+	.about-me>p:nth-of-type(2) {
+		padding-right: 0;
+	}
+
+	.about-me>p:last-of-type {
+		float: right;
+		clear:none;
+	}
+
+	.about-me>.timeline {
+		float: right;
+		clear: right;
+		position: absolute;
+		margin: 0;
+		top: -9rem;
+		right: 5.888%;
+	}
+
+	.educational-background>p:first-of-type {
+		padding-left: 28%;
+		text-align: right;
+	}
+
+	.educational-background>ul {
+		width: 100%;
+		float: left;
+		clear: none;
+	}
+
+	.educational-background>ul>li {
 		width: 50%;
+		float: left;
+		clear: left;
+		text-align: right;
+		padding: .75rem 2rem .75rem 0rem;
+	}
+
+
+	.educational-background>ul>li:nth-child(even) {
+		float: right;
+		clear: none;
+		padding: .75rem 0rem .75rem 2rem;
+	}
+
+
+}
+
+
+/* @media screen and (min-width: 815px) */
+@media screen and (min-width: 50.93em) {
+
+	.about-me>.timeline {
+		top: -8rem;
 	}
 
 }
 
 
-/* @media screen and (min-width: 888px) */
-@media screen and (min-width: 55.5em) {
+/* @media screen and (min-width: 845px) */
+@media screen and (min-width: 52.81em) {
 
-	body {
-		/* Zoom baseline grid to 17/16 = 1.0625 */
-		font-size: (@font-size + 1) / @em;
-	}
-}
-
-
-/* @media screen and (min-width: 984px) */
-@media screen and (min-width: 61.5em) {
-
-	body {
-		/* Reset baseline grid to 16/16 = 1.0 */
-		font-size: (@font-size) / @em;
-	}
-
-	header, #twoway {
-		margin: 0 @column*3;
+	.about-me>.timeline {
+		top: -6rem;
 	}
 
 }
 
+/* @media screen and (min-width: 864px) */
+@media screen and (min-width: 54em) {
+
+	.about-me>.timeline {
+		top: -5rem;
+	}
+
+	.skills>figure {
+		max-width: 26rem;
+	}
+
+	// .about-me>figure:first-of-type {
+	// 	width: 25%;
+	// 	margin: 0 0 2em 10%;
+	// }
+
+}
+
+
+/* @media screen and (min-width: 896px) */
+@media screen and (min-width: 56em) {
+
+	.about-me {
+		margin-bottom: 3em;
+	}
+
+	.about-me>.timeline {
+		top: 4.5rem;
+		right: 7%;
+	}
+
+	.about-me>p:last-of-type {
+		float: left;
+		clear: left;
+	}
+
+	.skills > figure > img {
+		padding: 6rem 1em 0rem 0rem;
+	}
+
+	.about-me>figure:first-of-type {
+		width: 25%;
+		margin: 0 0 2em 10%;
+	}
+
+	.educational-background>p:first-of-type {
+		padding-left: 40%;
+	}
+
+}
+
+/* @media screen and (min-width: 912px) */
+@media screen and (min-width: 57em) {
+
+	// .about-me>.timeline {
+	// 	top: -4rem;
+	// }
+
+	// .skills > figure > img {
+	// 	padding: 3em;
+	// }
+
+	.about-me>figure:first-of-type {
+		width: 25%;
+		margin: 0 0 2em 10%;
+	}
+
+}
+
+/* @media screen and (min-width: 1080px) */
+@media screen and (min-width: 67.5em) {
+
+	article>section:last-child {
+		width: 75%;
+		float: right;
+	}
+
+}
 
 /* @media screen and (min-width: 1200px) */
 @media screen and (min-width: 75em) {
 
-	body {
+	:root {
 		/* Zoom baseline grid to 17/16 = 1.0625 */
 		font-size: (@font-size + 1) / @em;
 	}
 
-}
+	article>section>ul>li>p {
+		letter-spacing: 0.05em;
+	}
 
+}
 
 /* @media screen and (min-width: 1392px) */
 @media screen and (min-width: 87em) {
@@ -78,10 +256,6 @@ STYLE
 	body {
 		/* Reset baseline grid to 16/16 = 1.0 */
 		font-size: (@font-size) / @em;
-	}
-
-	header, #twoway {
-		margin: 0 @column*5;
 	}
 
 }
@@ -111,22 +285,7 @@ STYLE
 /* @media screen and (min-width: 1872px) */
 @media screen and (min-width: 117em) {
 
-	header, #twoway {
-		margin: 0 @column*1;
-	}
 
-	header .wrapper {
-		width: 37.5%;
-		margin-left: 25%;
-	}
-
-	#twoway .wrapper {
-		width: 25%;
-	}
-
-	#twoway .wrapper:first-child {
-		margin-left: 25%;
-	}
 
 }
 

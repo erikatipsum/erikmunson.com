@@ -56,7 +56,7 @@ h2 {
 	height: 0;
 	padding-bottom: 10.02%;
 	width: 68%;
-	max-width: 600px;
+	max-width: 22rem;
 }
 
 h3 {
@@ -67,9 +67,7 @@ h3 {
 	font-weight: 100;
 	line-height: (@line*2) / 42 * 1em;
 	margin: (2.618/@em) 0  (@line) / 36 * 1em;
-	text-shadow: 0px .1em .2em rgba(0,0,0,.7);
 	letter-spacing: .03em;
-	-webkit-font-smoothing: antialiased;
 }
 
 
@@ -189,17 +187,16 @@ ABOUT ME
 ***************************/
 
 .about-me>h3>.char4 {
-	letter-spacing: -0.02em;
+	letter-spacing: -0.02rem;
 }
 
 .about-me>figure {
 	width: 50%;
-	margin: 0 auto (@line * 1.5) / 25 * 1em;
-	box-shadow: 0px 1px 5px rgba(0,0,0,0.6);
+	margin: 0 auto (@line * 1.5) / 25 * 1rem;
 }
 
 .about-me>p {
-	margin-bottom:  (@line * 1.5) / 25 * 1em;
+	margin-bottom:  (@line * 1.5) / 25 * 1rem;
 }
 
 /* Timeline */
@@ -210,16 +207,17 @@ ABOUT ME
 	background-position: center center;
 	background-size: contain;
 	box-shadow: none;
-	width: 20em;
-	margin: 6em auto;
-	font-size: 0.86em; // These two lines
-	line-height: 1.55em; // Zoom out the timeline to fit on a 320px viewport
+	width: 17.33rem;
+	margin: 6rem auto;
+	font-size: 0.86rem; // These two lines
+	line-height: 1.33rem; // Zoom out the timeline to fit on a 320px viewport
+	letter-spacing: 0.0099rem;// Webkit rounds letter spacing to full pixels, but Gecko and Presto will both break the layout if this is not spaced to a perfect ratio.
 }
 
 .timeline>ul>li {
 	display: block;
 	position: relative;
-	margin: 2em auto;
+	margin: 2rem auto;
 }
 
 .timeline>ul>li:nth-child(odd) {
@@ -236,8 +234,8 @@ ABOUT ME
 
 .timeline>ul>li>figcaption>img {
 	display: block;
-	max-width: 3.5em;
-	max-height: 3em;
+	max-width: 3.3rem;
+	max-height: 2.8rem;
 }
 
 .timeline>ul>li:nth-child(odd)>figcaption>img {
@@ -246,166 +244,167 @@ ABOUT ME
 }
 
 .timeline>ul>li:nth-child(2) {// Discovered Computer
-	margin-left: .6em;
+	margin-left: .61rem;
 	margin-top: 0;
 }
 
 .timeline>ul>li:nth-child(2)>figcaption>img {// Discovered Computer IMG
-	margin-left: 1.1em;
+	margin-left: 1.1rem;
 }
 
 .timeline>ul>li:nth-child(3) {// Discovered Caffeine
-	margin-right: 1.36em;
+	margin-right: 1.13rem;
 	margin-top: 0;
 	margin-bottom: 0;
 	text-align: right;
 }
 
 .timeline>ul>li:nth-child(3)>figcaption>img {// Discovered Caffeine IMG
-	bottom: 2em;
-	left: 14em;
+	bottom: 1.7rem;
+	left: 12.5rem;
 }
 
 .timeline>ul>li:nth-child(4) {// Co-Hosted A Tech News Podcast
-	width: 8em;
-	margin-left: 2.5em;
-	margin-top: 0em;
-	margin-bottom: 0;
+	width: 6.4rem;
+	margin-left: 2.15rem;
+	margin-top: 0rem;
+	margin-bottom: 0rem;
 }
 
 .timeline>ul>li:nth-child(4)>figcaption>img {// Co-Hosted A Tech News Podcast IMG
 	position: relative;
-	left: .5em;
-	max-height: 2.5em;
+	left: .5rem;
+	max-height: 2.3rem;
 }
 
 .timeline>ul>li:nth-child(4)>figcaption:after {// Co-Hosted A Tech News Podcast YEAR
 	position:absolute;
-	left: 7.07em;
-	top: 2.45em;
+	left: 6.1rem;
+	top: 2.2rem;
 }
 
 .timeline>ul>li:nth-child(5) {// Co-Founded Webologist Design
-	width: 9em;
+	width: 8rem;
 	margin-bottom: 0;
-	margin-right: 1.9em;
+	margin-right: 1.66rem;
 	margin-top: 0em;
 }
 
 .timeline>ul>li:nth-child(5)>figcaption>img {// Co-Founded Webologist Design IMG
-	max-width: 4em;
-	right: 0em;
-	bottom: 3.2em;
+	max-width: 3.5rem;
+	right: 0rem;
+	bottom: 3rem;
 }
 
 .timeline>ul>li:nth-child(5)>figcaption:before {// Co-Founded Webologist Design YEAR
 	position:absolute;
-	right: 7.6em;
-	bottom: 0em;
+	right: 6.55rem;
+	bottom: 0rem;
 }
 
 .timeline>ul>li:nth-child(6) {// Rebranded As Ipsum Creative
-	width: 8em;
+	width: 6.8rem;
 	margin-bottom: 0;
-	margin-left: 3.3em;
-	margin-top: 1em;
+	margin-left: 2.82rem;
+	margin-top: 0.8rem;
 }
 
 .timeline>ul>li:nth-child(6)>figcaption>img {// Rebranded As Ipsum Creative IMG
 	position: relative;
-	left: 0em;
-	max-height: 2.5em;
+	left: 0rem;
+	max-height: 2.5rem;
 }
 
 .timeline>ul>li:nth-child(6)>figcaption:after {// Rebranded As Ipsum Creative YEAR
 	position:absolute;
-	left: 6.249em;
-	top: 2.4em;
+	left: 5.431rem;
+	top: 2.2rem;
 }
 
 .timeline>ul>li:nth-child(7) {// Moved to Albuquerque, NM
-	width: 8em;
+	width: 7.7rem;
 	margin-bottom: 0;
-	margin-right: 2.38em;
-	margin-top: 0em;
+	margin-right: 1.97rem;
+	margin-top: 0rem;
 }
 
 .timeline>ul>li:nth-child(7)>figcaption>img {// Moved to Albuquerque, NM IMG
-	max-width: 4em;
-	right: 0em;
-	bottom: 3.2em;
+	max-width: 4rem;
+	right: 0rem;
+	bottom: 3rem;
 }
 
 .timeline>ul>li:nth-child(7)>figcaption:before {// Moved to Albuquerque, NM YEAR
 	position:absolute;
-	right: 7.23em;
-	top: 1.5em;
+	right: 6.23rem;
+	top: 1.33rem;
 }
 
 .timeline>ul>li:nth-child(8) {// Web UI Expert at Zocalo Consulting
-	width: 9em;
-	margin-bottom: 2.5em;
-	margin-left: 2.3em;
-	margin-top: 0em;
+	width: 8rem;
+	margin-bottom: 2rem;
+	margin-left: 2rem;
+	margin-top: 0rem;
 }
 
 .timeline>ul>li:nth-child(8)>figcaption>img {// Web UI Expert at Zocalo Consulting IMG
 	position: relative;
-	left: 0em;
-	max-height: 2.5em;
+	left: 0rem;
+	bottom: 0.5rem;
+	max-height: 2.5rem;
 }
 
 .timeline>ul>li:nth-child(8)>figcaption:after {// Web UI Expert at Zocalo Consulting YEAR
 	position:absolute;
-	left: 7.2em;
-	top: 3.35em;
+	left: 6.25rem;
+	top: 3.05rem;
 	white-space: nowrap;
 }
 
 .timeline>ul>li:nth-child(9) {// Front-End Developer at SantaFe.com
-	width: 8em;
+	width: 6.4rem;
 	margin-bottom: 0;
-	margin-right: 2.33em;
-	margin-top: 1.3em;
+	margin-right: 2rem;
+	margin-top: 1.3rem;
 }
 
 .timeline>ul>li:nth-child(9)>figcaption>img {// Front-End Developer at SantaFe.com IMG
-	max-width: 4em;
-	right: 0em;
-	bottom: 3em;
+	max-width: 3.5rem;
+	right: 0rem;
+	bottom: 3rem;
 }
 
 .timeline>ul>li:nth-child(9)>figcaption:before {// Front-End Developer at SantaFe.com YEAR
 	position:absolute;
-	right: 7.2em;
-	bottom: 1.48em;
+	right: 6.2rem;
+	bottom: 1.38rem;
 	white-space: nowrap;
 }
 
 .timeline>ul>li:nth-child(10) {// Web Designer/Developer at Grace Communications
-	width: 8em;
+	width: 7.6rem;
 	margin-bottom: 0;
-	margin-left: 1.3799em;
-	margin-top: -1em;
+	margin-left: 1.15rem;
+	margin-top: -1rem;
 }
 
 .timeline>ul>li:nth-child(10)>figcaption>img {// Web Designer/Developer at Grace Communications IMG
 	position: relative;
-	left: 0em;
-	max-height: 2.5em;
+	left: 0rem;
+	max-height: 2.2rem;
 }
 
 .timeline>ul>li:nth-child(10)>figcaption:after {// Web Designer/Developer at Grace Communications YEAR
 	position:absolute;
-	left: 8.2em;
-	top: 2.5em;
+	left: 7.1rem;
+	top: 2.15rem;
 	white-space: nowrap;
 }
 
 .timeline>ul>li:nth-child(11) {// I Want to Join your Team!
-	width: 10em;
-	margin-left: 5.48em;
-	margin-top: 0.5em;
+	width: 8.5rem;
+	margin-left: 4.88rem;
+	margin-top: 0.5rem;
 }
 
 .timeline>ul>li:nth-child(11)>figcaption>img { // I Want to Join your Team! IMG
@@ -417,14 +416,14 @@ ABOUT ME
 
 .timeline>ul>li:first-child {
 	text-align: right;
-	width: 5.4em;
-	max-width: 5.4em;
-	margin: 0 auto;
+	width: 4.6rem;
+	max-width: 4.6rem;
+	margin: 0 auto 0 6.41rem;
 }
 
 .timeline>ul>li:first-child>figcaption>img {
 	position: absolute;
-	bottom: 1.25em;
+	bottom: 1.25rem;
 	max-width: 100%;
 }
 
@@ -432,7 +431,7 @@ ABOUT ME
 	content: attr(data-year);
 	display:block;
 	position: absolute;
-	left: 0.1446em;
+	left: 0.1446rem;
 }
 
 /***************************
@@ -540,19 +539,71 @@ article>section {
 	margin: (48/42*1em) 0 (24/42*1em);
 }
 
-/* @media screen and (min-width: 640px) */
-@media screen and (min-width: 40em) {
+/* @media screen and (min-width: 480px) */
+@media screen and (min-width: 30em) {
 
-	body {
-		/* Zoom baseline grid to 17/16 = 1.0625 */
-		font-size: (@font-size + 1) / @em;
+	article, footer {
+		margin: 0 10%;
 	}
 
 	h1 {
-		margin: (48/42*1em) 0 (24/42*1em);
+		margin: (48/26*1em) 0 (24/42*1em);
+	}
+
+	h2 {
+		max-width: 18rem;
+	}
+
+	article > section {
+		width: 100%;
+		margin-bottom: 6.263158em;
+	}
+
+	article > section:last-child {
+		margin-bottom: 3.263158em;
+	}
+
+	.skills>figure {
+		max-width: 30rem;
+		float: left;
+	}
+
+	.skills>ul>li>h4 {
+		font-size: 1em;
+		margin-bottom: 0;
+	}
+
+	.skills>ul>li>h5 {
+		font-size: 1em;
+		margin-bottom: 0;
+		line-height: 1em;
 	}
 
 }
 
 
+/***************************
+@2X STYLES
+***************************/
 
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+	body {
+		background-size: @bg_size_2x;
+	}
+
+	.about-me>.timeline {
+		letter-spacing: 0.003rem;// Hi-DPI displays tend to ignore subpixel
+		// rendering and shape hinting, so the spacing needs to be adjusted to // fit the layout.
+	}
+
+
+
+}
