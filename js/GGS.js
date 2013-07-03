@@ -16,8 +16,8 @@ var switchOpacity = '0.618';
 var baseFontSize = 16;
 var baselineGridHeight = (24 / baseFontSize)+'em';
 
-var eightColBreakpoint = ((720-1) / baseFontSize)+'em';
-var sixteenColBreakpoint = ((1872-1) / baseFontSize)+'em';
+var eightColBreakpoint = ((480-1) / baseFontSize)+'em';
+var sixteenColBreakpoint = ((1440-1) / baseFontSize)+'em';
 
 /*
 *  Note that the script might not work as expected if
