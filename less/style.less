@@ -140,6 +140,34 @@ STYLE
 		padding: .75rem 0rem .75rem 2rem;
 	}
 
+	footer ul li:nth-of-type(-n+2) {
+		float: left;
+		clear: none;
+		width: 28%;
+		margin: 1em 0;
+	}
+
+	footer ul li:first-of-type {
+		width: 33%;
+	}
+
+	footer ul li:nth-of-type(n+3) {
+		float: right;
+		clear: none;
+		width: 8%;
+		height: 3.333em;
+		padding: 0;
+		margin: 0em;
+		text-align: right;
+	}
+
+	footer ul li:nth-of-type(n+3) a {
+		padding: 1em 0;
+	}
+
+	footer ul li [data-icon] {
+		font-size: 2.5em;
+	}
 
 }
 
@@ -239,6 +267,11 @@ STYLE
 		width: 75%;
 		float: right;
 	}
+
+	footer ul li:first-of-type {
+		width: 25%;
+	}
+
 
 }
 
@@ -500,7 +533,7 @@ STYLE
 @media screen and (min-width: 108em) {
 
 	body {
-		max-width: 108em;
+	//	max-width: 115em;
 		position: relative;
 		margin: 0 auto;
 		float: none;
@@ -512,14 +545,29 @@ STYLE
 
 }
 
+/* @media screen and (min-width: 1950px) */
+@media screen and (min-width: 121.8em) {
+
+	body {
+		max-width: 2000/@em;
+	}
+
+	.about-me {
+		margin-top: 1em;// Corrects vertical layout when Experience section becomes wider & shorter
+		width: 40%;
+	}
+
+	.about-me>.timeline {
+		top: 32rem;
+	}
+
+	.educational-background {
+		width: 45%;
+	}
+
+}
 
 /* @media screen and (min-width: 2080px) */
 @media screen and (min-width: 130em) {
-
-	body {
-		/* Zoom baseline grid to 18/16 = 1.125 */
-		font-size: (@font-size + 2) / @em;
-		max-width: 2560/@em;
-	}
 
 }

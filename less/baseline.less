@@ -466,6 +466,9 @@ footer {
 
 footer>ul {
 	padding: 1.5em 0;
+	float: left;
+	clear: none;
+	width: 100%;
 }
 
 footer a {
@@ -481,6 +484,39 @@ footer a:hover {
 footer h5 {
 	display: inline;
 	padding-right: .618em;
+}
+
+footer ul li:nth-of-type(n+3) {
+	float: left;
+	clear: none;
+	width: 25%;
+	height: 4.4em;
+	padding: 0;
+	margin: 1em 0em;
+	text-align: center;
+	-webkit-font-smoothing: antialiased; // Don't EVER do this on text that is meant to be read. It's bad for accessability.
+}
+
+footer ul li:nth-of-type(n+3) a:hover {
+	color: white;
+}
+
+footer ul li:nth-of-type(n+3) a {
+	float: left;
+	clear: none;
+	width: 100%;
+	height: 100%;
+	display: block;
+	padding: 2em .7em .8em;
+	box-sizing: border-box;
+}
+
+footer ul li [data-icon] {
+	font-size: 3.333em;
+	width: 100%;
+	height: 100%;
+	float: left;
+	clear: none;
 }
 
 
@@ -615,7 +651,7 @@ only screen and (                min-resolution: 2dppx) {
 
 	.about-me>.timeline {
 		letter-spacing: 0.003rem;// Hi-DPI displays tend to ignore subpixel
-		// rendering and shape hinting, so the spacing needs to be adjusted to // fit the layout.
+		// rendering and shape hinting, so the spacing needs to be adjusted to fit the layout.
 	}
 
 

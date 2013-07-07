@@ -139,18 +139,30 @@ img {
 	-ms-interpolation-mode: bicubic;
 }
 
+
 /*
- * Swiper - Mobile Touch Slider CSS
- * http://www.idangero.us/sliders/swiper
- *
- * Vladimir Kharlampidi, The iDangero.us
- * http://www.idangero.us/
- *
- * Copyright 2012-2013, Vladimir Kharlampidi
- * The iDangero.us
- * http://www.idangero.us
- *
- * Licensed under GPL & MIT
- *
+*
+*  Screen reader text (hides from view)
+*
 */
+
+
+.screen-reader-text { /* Reusable, toolbox kind of class */
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
+
+/*
+*
+*  Relatively straightforward data attribute icon font method.
+*  http://css-tricks.com/examples/IconFont/
+*/
+
+[data-icon]:before {
+	font-family: "social_foundiconsregular";
+	content: attr(data-icon);
+	speak: none; /* Not to be trusted, but hey. */
+}
 
